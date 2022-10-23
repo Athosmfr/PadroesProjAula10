@@ -2,6 +2,6 @@ package abstractFactory;
 
 public interface IFabrica {
 	
-	public absFabrica fabricaCont(String cont);
+	public String fabricaCont(String cont, String especie);
 }
 // ver de criar uma classe ao inves de interface;

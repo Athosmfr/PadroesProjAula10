@@ -2,11 +2,11 @@ package abstractFactory;
 
 public class fabricaAfrica extends absFabrica {
 
-	public absAnimal fabricarAnimal (String especie) {
-		if (especie == "Agula") {
-			return new Ave();
-		} else if (especie == "Leao") {
-			return new Mamifero();
+	public String fabricarAnimal (String tipo) {
+		if (tipo == "Ave") {
+			return new aveAgula().escritura();
+		} else if (tipo == "Mamifero") {
+			return new mamLeao().escritura();
 		}
 		return null;
 	}

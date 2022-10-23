@@ -3,16 +3,20 @@ package abstractFactory;
 public class main {
 	
 	public static void main(String[] args) {
-		
-		Ave aveAfrica = new Ave();
-		
-		aveAfrica.alimentacao = "Peixes";
-		aveAfrica.cor = "Preta";
-		aveAfrica.especie = "Agula";
-		
+	
 		absFabrica fab1 = new absFabrica();
-		fab1.fabricaCont("America");
+		fab1.fabricaCont("America", "Ave");
 		
+		System.out.println(fab1.fabricaCont("America", "Ave"));
+		
+		absFabrica fab2 = new absFabrica();
+		System.out.println(fab2.fabricaCont("America", "Mamifero"));
+		
+		absFabrica fab3 = new absFabrica();
+		System.out.println(fab3.fabricaCont("Africa", "Ave"));
+		
+		absFabrica fab4 = new absFabrica();
+		System.out.println(fab4.fabricaCont("Africa", "Mamifero"));
 		
 		
 	}
